@@ -11,3 +11,7 @@ The model is then converted to a Core ML model with coremltools. Note that corem
 
 ## App Extension
 Since the extension uses the Core ML, it is only available on macOS 10.13.
+
+For each comment, the injected script sends a message to the extension, which has a property containing the model. The model sends the prediction back, and if the predition is a spam, the comment is changed into "Blocked!".
+
+As this is only a project, to enable the extension, in Safari, one needs to choose Develop > Allow Unsigned Extensions. Then type in the password. Run the app scheme in XCode and open the preferences of Safari. In the Extensions tab, one will see the extension.
